@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body>
+<nav>
+  {{#if currentUser}}
+    <a href="/rooms">Room list</a>
+    <a href="/private">Super secret page</a>
+    <a href="/rooms/add">Create a room</a>
+    <form action="/logout" method="post">
+      <button type="submit">Logout</button>
+    </form>
+    {{else}}
+    <a href="/rooms">Room list</a>
+    <a href="/signup">Signup</a>
+    <a href="/login">Login</a>
+    <a href="/slack-login">Login with Slack</a>
+    <a href="/google-login">Login with Google</a>
+  {{/if}}
+  <a href="/public">Public page</a>
+</nav>
+  {{{body}}}
+
+  <script src="/javascripts/script.js"></script>
+</body>
+</html>
