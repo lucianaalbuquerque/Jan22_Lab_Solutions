@@ -1,0 +1,43 @@
+.App {
+  margin: 0 auto;
+  text-align: center;
+  width: 70vw;
+}
+.celebritiesTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  background-color: lightgray;
+  border: none;
+  padding: 50px;
+  font-size: 1.1rem;
+}
+tr {
+  border: 1px solid lightgray;
+}
+td {
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+td img {
+  border-radius: 20px;
+  width: 100px;
+}
+.btn-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn {
+  background-color: grey;
+  padding: 15px 20px;
+  margin: 50px 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
